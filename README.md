@@ -84,9 +84,9 @@ This SDK supports WhatsApp Business API versions from v16.0 onwards. [See api ch
 
 ```xml
    <dependency>
-      <groupId>com.github.gongmingqm10</groupId>
+      <groupId>com.github.Bindambc</groupId>
       <artifactId>whatsapp-business-java-api</artifactId>
-      <version>v0.6.2</version>
+      <version>v0.6.1</version>
    </dependency>
 ```
 
@@ -107,7 +107,7 @@ This SDK supports WhatsApp Business API versions from v16.0 onwards. [See api ch
 
 ```gradle
 	dependencies {
-	        implementation 'com.github.gongmingqm10:whatsapp-business-java-api:v0.6.2'
+	        implementation 'com.github.Bindambc:whatsapp-business-java-api:v0.6.1'
 	}
 ```
 
