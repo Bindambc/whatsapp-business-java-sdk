@@ -19,7 +19,8 @@ import java.util.List;
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = As.EXISTING_PROPERTY, property = "type")
 @JsonSubTypes({@JsonSubTypes.Type(value = ButtonComponent.class, name = "button"), //
         @JsonSubTypes.Type(value = HeaderComponent.class, name = "header"), //
-        @JsonSubTypes.Type(value = BodyComponent.class, name = "body")})//
+        @JsonSubTypes.Type(value = BodyComponent.class, name = "body"),
+        @JsonSubTypes.Type(value = CarouselComponent.class, name = "carousel")})//
 public abstract class Component<T extends Component<T>> {
     @JsonProperty("type")
     private final ComponentType type;

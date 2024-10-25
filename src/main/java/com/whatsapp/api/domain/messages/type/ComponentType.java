@@ -19,7 +19,12 @@ public enum ComponentType {
     /**
      * Button component type.
      */
-    BUTTON("button");
+    BUTTON("button"),
+
+    /**
+     * Carousel component type.
+     */
+    CAROUSEL("carousel");
 
     private final String value;
 
