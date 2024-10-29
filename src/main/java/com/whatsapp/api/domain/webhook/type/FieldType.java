@@ -20,6 +20,14 @@ public enum FieldType {
      */
     PHONE_NUMBER_QUALITY_UPDATE("phone_number_quality_update"),
     /**
+     * Notifies you when changes to a template's components, like a change in title or body, or an addition of a button.
+     */
+    MESSAGE_TEMPLATE_COMPONENTS_UPDATE("message_template_components_update"),
+    /**
+     * Notifies you when the message template quality update, like
+     */
+    MESSAGE_TEMPLATE_QUALITY_UPDATE("message_template_quality_update"),
+    /**
      * Notifies you when a WABA has been upgraded from unverified trial experience to a verified account, or if a WABA has been banned.
      */
     ACCOUNT_UPDATE("account_update"),

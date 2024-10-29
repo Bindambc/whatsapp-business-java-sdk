@@ -35,6 +35,9 @@ public class SendCarouselTemplateMessageExample {
                                                         new BodyComponent().addParameter(new TextParameter("Tokyo"))
                                                 )
                                                 .addComponent(
+                                                        new ButtonComponent().setIndex(0).setSubType(ButtonSubType.QUICK_REPLY).addParameter(new ButtonPayloadParameter("product_123"))
+                                                )
+                                                .addComponent(
                                                         new ButtonComponent().setIndex(1).setSubType(ButtonSubType.URL).addParameter(new TextParameter("url_123"))
                                                 )
                                         )
@@ -47,6 +50,9 @@ public class SendCarouselTemplateMessageExample {
                                                         new BodyComponent().addParameter(new TextParameter("China"))
                                                 )
                                                 .addComponent(
+                                                        new ButtonComponent().setIndex(0).setSubType(ButtonSubType.QUICK_REPLY).addParameter(new ButtonPayloadParameter("product_234"))
+                                                )
+                                                .addComponent(
                                                         new ButtonComponent().setIndex(1).setSubType(ButtonSubType.URL).addParameter(new TextParameter("url_234"))
                                                 )
                                         )
@@ -57,6 +63,9 @@ public class SendCarouselTemplateMessageExample {
                                                         ))
                                                 .addComponent(
                                                         new BodyComponent().addParameter(new TextParameter("Australia"))
+                                                )
+                                                .addComponent(
+                                                        new ButtonComponent().setIndex(0).setSubType(ButtonSubType.QUICK_REPLY).addParameter(new ButtonPayloadParameter("product_456"))
                                                 )
                                                 .addComponent(
                                                         new ButtonComponent().setIndex(1).setSubType(ButtonSubType.URL).addParameter(new TextParameter("url_456"))
