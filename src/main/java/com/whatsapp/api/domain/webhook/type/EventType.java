@@ -81,6 +81,10 @@ public enum EventType {
     /**
      * Pin changed event type.
      */
-    PIN_CHANGED
+    PIN_CHANGED,
 
+    /**
+     * Template pending deletion event type.
+     */
+    PENDING_DELETION
 }
