@@ -12,6 +12,45 @@ public class ReactionMessage {
     private String messageId;
     @JsonProperty("emoji")
     private String emoji;
+    @JsonProperty("from")
+    private String from;
+
+    /**
+     * Instantiates a new Reaction message.
+     *
+     * @param messageId <b>required</b>. The WhatsApp Message ID (wamid) of the
+     *                  message on which the reaction should appear. The reaction
+     *                  will not be sent if:
+     *                  <ul>
+     *                  <li>
+     *                  The message is older than 30 days
+     *                  </li>
+     *                  <li>
+     *                  The message is a reaction message
+     *                  </li>
+     *                  <li>The message has been deleted</li>
+     *                  </ul>
+     *                  If the ID is of a message that has been deleted, the message
+     *                  will not be delivered.
+     * @param emoji     <b>required</b>. Emoji to appear on the message.
+     *                  <ul>
+     *                  <li>All emojis supported by Android and iOS devices are
+     *                  supported.</li>
+     *                  <li>Rendered-emojis are supported.</li>
+     *                  <li>If using emoji unicode values, values must be Java- or
+     *                  JavaScript-escape encoded.</li>
+     *                  <li>Only one emoji can be sent in a reaction message</li>
+     *                  <li>Use an empty string to remove a previously sent
+     *                  emoji.</li>
+     *
+     *                  </ul>
+     * @param from      Identifier of the sender who initiates the reaction
+     */
+    public ReactionMessage(String messageId, String emoji, String from) {
+        this.messageId = messageId;
+        this.emoji = emoji;
+        this.from = from;
+    }
 
     /**
      * Instantiates a new Reaction message.
@@ -103,6 +142,26 @@ public class ReactionMessage {
      */
     public ReactionMessage setEmoji(String emoji) {
         this.emoji = emoji;
+        return this;
+    }
+
+    /**
+     * Gets from.
+     *
+     * @return the from
+     */
+    public String getFrom() {
+        return from;
+    }
+
+    /**
+     * Sets from.
+     *
+     * @param from Identifier of the sender who initiates the reaction
+     * @return ReactionMessage
+     */
+    public ReactionMessage setFrom(String from) {
+        this.from = from;
         return this;
     }
 }
